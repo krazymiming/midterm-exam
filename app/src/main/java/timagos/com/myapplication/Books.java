@@ -3,14 +3,14 @@ package timagos.com.myapplication;
 /**
  * Created by Lougie on 23/02/2016.
  */
-public class Bookss {
+public class Books {
     private String id;
     private String title;
     private String genre;
     private String Author;
     private Boolean isRead;
 
-    public Bookss(String id, String title, String genre, String author, Boolean isRead) {
+    public Books(String id, String title, String genre, String author, Boolean isRead) {
         this.id = id;
         this.title = title;
         this.genre = genre;
@@ -18,7 +18,7 @@ public class Bookss {
         this.isRead = isRead;
     }
 
-    public Bookss() {
+    public Books() {
 
     }
 

@@ -1,13 +1,9 @@
 package timagos.com.myapplication;
 
-import android.graphics.Bitmap;
 import android.net.Uri;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -24,11 +20,11 @@ public class BooksApi extends AppCompatActivity {
     private static final String book_author = "author";
     private static final String book_isRead = "isRead";
 
-    public static Bookss getBooks(Uri uri, @NonNull String requestMethod) {
+    public static Books getBooks(Uri uri, @NonNull String requestMethod) {
         String json = HttpUtils.getResponse(uri, requestMethod);
 
         JSONObject jsonObject = new JSONObject();
-        Bookss books = new Bookss();
+        Books books = new Books();
 
         try {
             books.setId(jsonObject.getString(book_id));

@@ -19,9 +19,6 @@ public class BooksList extends AppCompatActivity {
 
         booksTitle = (TextView) findViewById(R.id.title);
         Intent intent = getIntent();
-        if (intent == null) {
-            throw new RuntimeException("DetailActivity must accept intent extras.");
-        }
 
         String mTitle = intent.getStringExtra("title");
         booksTitle.setText(mTitle);
